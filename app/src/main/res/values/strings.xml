@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App Usage</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_fragment_header">Data Analytics</string>
+    <string name="app_usage_top_used_header">App Usage Time</string>
+    <string name="app_usage_top_used_btn">Update Usage Time</string>
+    <string name="app_usage_order_btn">Update Order Sequence</string>
+    <string name="app_usage_order_header">Order Sequence (most recent last)</string>
+
+</resources>

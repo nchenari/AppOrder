@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivityFragment">
+
+    <!-- Title screen -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="BroadSense Data Analytics"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:autoText="false" />
+
+    <!-- Power Btn Press Count panel (cardView1) -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Power Button Press Count"
+                android:textStyle="bold|italic"
+                android:layout_alignParentTop="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:autoText="true"
+                android:layout_marginBottom="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#000000"
+                android:layout_below="@+id/title1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/pwrBtnPressCt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Count: #"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_below="@+id/title1"
+                android:layout_above="@+id/usage_btn" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stats_btn1"
+                android:text="Update Count"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- App Usage order Sequence (cardView2) -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Order Sequence (most recent last)"
+                android:textStyle="bold|italic"
+                android:layout_alignParentTop="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:autoText="true"
+                android:layout_marginBottom="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#000000"
+                android:layout_below="@+id/title2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <ListView
+                android:id="@+id/sequenceListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2"
+                android:layout_above="@+id/order_btn" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stats_btn2"
+                android:text="Update Usage Sequence"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal">
+    <!-- Screen title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Desired Parameters"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="0dp"/>
+    <!-- Activity description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your input helps us create a \n personalized plan just for you"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"/>
+    <!-- User selectable categories -->
+    <TextView
+        android:id="@+id/category2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/green"
+        android:text="Zen"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:id="@+id/category3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/green"
+        android:text="Exercise"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:id="@+id/category1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/green"
+        android:text="Social"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="50dp" />
+    <!-- reset to default parameter values -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/restoreDefaultBtn"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="Restore Default Settings" />
+
+</LinearLayout>
